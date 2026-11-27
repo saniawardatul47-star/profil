@@ -1,151 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROFIL</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Profile</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
-    <div class="page">
-        <header class="hero">
-            <div class="profile-content">
-                <span class="badge">web profile</span>
-                <h1 style="color: darkmagenta;">sania wardatul jannah</h1>
-                <P class="deskripsi" style="color: rgb(25, 25, 25,)">
-                    halo saya siswa dari MAN3 tulungngagung
-                </P>
-            </div>
-            <img src="kelinci comel.jpg" class="profile-photo">
-        </header>
+  <body class="page">
+    <header class="hero">
+      <div class="profile-content">
+        <span class="badge">Web Profile</span>
+        <h1 id="text1" class="judul judul-besar">Sania Wardatul Jannah</h1>
+        <p id="text2" class="judul">
+          Saya seorang siswa MAN 3 Tulungagung yang sedang belajar Rekayasa
+          Perangkat Lunak (RPL)
+        </p>
+      </div>
+      <img class="profile-photo" src="profile.jpeg" alt="photo profile" />
+    </header>
 
-        <main class="content-grid">
-            <section class="card">
-                <h2>hobi</h2>
-                <ul class="hobby-list">
-                    <li>berenang</li>
-                    <li>membaca</li>
-                </ul>
-            </section>
-            <section class="card">
-                <h2>cita cita</h2>
-                <ul class="hobby-list">
-                    <li>ceo</li>
-                    <li>pengusaha sukses</li>
-                    <li>content creator</li>
-                </ul>
-            </section>
-                <section class="card">
-                    <h2>media sosial</h2>
-                   <div class="social-link">
-                    <a href="https://www.instagram.com/luvr.sann">instagram</a>
-                    </div>
-                </section>
-                <section class="card">
-                <form>
-                    <label>NAMA:</label>
-                    <input type="text" placeholder="Masukkan nama anda!" />
+    <main class="content-grid">
+      <section class="card">
+        <h2>Hobi</h2>
+        <ul class="hobby-list">
+          <li>Berenang</li>
+          <li>Badminton</li>
+        </ul>
+      </section>
 
-                    <label>pesan</label>"
-                    <input type="text" placeholder="masukkan pesan anda" />
+      <section class="card">
+        <h2>Media Sosial</h2>
+        <div class="social-links">
+          <a href="#"> Youtube </a>
+          <a href="#">Instagram</a>
+          <a href="#">Tiktok</a>
+        </div>
+      </section>
 
-                    <button type="submit">kirim</button>
-                </form>
-            </section>
+      <section class="card form-card">
+        <h2>Kontak</h2>
+        <form>
+          <div class="field-group">
+            <label>Nama:</label>
+            <input type="text" placeholder="Masukkan nama anda!" />
+          </div>
+          <div class="field-group">
+            <label>Pesan</label>
+            <textarea rows="4" placeholder="Masukkan pesan anda!"></textarea>
+          </div>
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </section>
 
-            <!-- jadwal pelajaran -->
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>hari</td>
-                        <th>mata pelajaran</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="6">senin</td>
-                        <td>sosiologi</td>
-                    </tr>
-                    <tr>
-                        <td>bahasa inggris</td>
-                    </tr>
-                    <tr>
-                        <td>biologi</td>
-                    </tr>
-                    <tr>
-                        <td>ski</td>
-                    </tr>
-                    <tr>
-                        <td>informatika</td>
-                    </tr>
-                    <tr>
-                        <td>akidah akhlak</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="6">selasa</td>
-                        <td>penjas</td>
-                    </tr>
-                    <tr>
-                        <td>kimia</td>
-                    </tr>
-                    <tr>
-                        <td>mtk</td>
-                    </tr>
-                    <tr>
-                        <td>sejarah</td>
-                    </tr>
-                    <tr>
-                        <td>pancasila</td>
-                    </tr>
-                    <tr>
-                        <td>bahasa indonesia</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">rabu</td>
-                        <td>quran hadis</td>
-                    <tr>
-                        <td>mtk tka</td>
-                    </tr>
-                    <tr>
-                        <td>bahasa arab</td>
-                    </tr>
-                    <tr>
-                        <td>rpl</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="5">kamis</td>
-                        <td>fiqih</td>
-                    <tr>
-                        <td>fisika</td>
-                    </tr>
-                    <tr>
-                        <td>mtk</td>
-                    </tr>
-                    <tr>
-                        <td>ekonomi</td>
-                    </tr>
-                    <tr>
-                        <td>bahasa arab</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="5">jumat</td>
-                        <td>geografi</td>
-                    <tr>
-                        <td>koding</td>
-                    </tr>
-                    <tr>
-                        <td>bahasa indonesia</td>
-                    </tr>
-                    <tr>
-                        <td>seni budaya</td>
-                    </tr>
-                    <tr>
-                        <td>bahasa inggris</td>
-                    </tr>
-                <tbody>
-            </table>
-            </tbody>
-
+      <section class="card schedule-card">
+        <h2>Jadwal Pelajaran</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Hari</th>
+              <th>Mata Pelajaran</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3">Senin</td>
+              <td>Matematika</td>
+            </tr>
+            <tr>
+              <td>Bahasa Inggris</td>
+            </tr>
+            <tr>
+              <td>Bahasa Indonesia</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Selasa</td>
+              <td>Matematika</td>
+            </tr>
+            <tr>
+              <td>Bahasa Inggris</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Rabu</td>
+              <td>Bahasa Jawa</td>
+            </tr>
+            <tr>
+              <td>Bahasa Indonesia</td>
+            </tr>
+            <tr>
+              <td>Bahasa Indonesia</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Kamis</td>
+              <td>Bahasa Jawa</td>
+            </tr>
+            <tr>
+              <td>Bahasa Indonesia</td>
+            </tr>
+            <tr>
+              <td>Bahasa Indonesia</td>
+            </tr>
+            <tr>
+              <td rowspan="4">Jumat</td>
+              <td>Bahasa Jawa</td>
+            </tr>
+            <tr>
+              <td>Bahasa Indonesia</td>
+            </tr>
+            <tr>
+              <td>Bahasa Indonesia</td>
+            </tr>
+            <tr>
+              <td>Bahasa Indonesia</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2026 Sania Wardatul Jannah. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
